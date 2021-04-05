@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    form{
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        width: 30%;
+        margin-left: 30%;
+        padding: 10px;
+    }
+    .wufo{
+        font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
+    }
+</style>
+<body>
+<form method="get" action="simpleform.html">
+    <h2>Order Form</h2>
+    <p>What would you like to buy?</p>
+     <select>
+    <option value = "  ">A</option>
+    <option>B (+  0.5$)</option>
+    <option>C (+  0.5$)</option>
+</select>
+    <p>How many would you like to order?</p><br>
+    <input type="radio" />1-$10</br>
+    <input type="radio" checked/>2-$15</br>
+    <input type="radio" />3-$20</br>
+    <p>Name<span style="color: darkred">*</span></p>
+    <input name = "firstName" type="text" placeholder="firstName" size="15"/>
+    <input name="lastName" type="text" placeholder="lastName" size="15"/>
+    <p>Email</p>
+    <input name="email" type="email" size="30"/>
+    <p>Phone Number</p>
+    <input type="text" size="5"/>
+    <input type="text" size="5"/>
+    <input type="text" size="5"/>
+    <p> <input type="button" name="Button" value="Submit"/></p>
+
+</form>
+</body>
+</html>
