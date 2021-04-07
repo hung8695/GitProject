@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table width="50%">
+    <tr>
+        <th>Amounnt</th>
+        <th>From Curency </th>
+        <th>To currency</th>
+        <th></th>
+    </tr>
+    <td  align="center"><input  id="0" type="text" size="30"> </td>
+    <td align="center">
+        <select id="1">
+            <option value="vnd">VND</option>
+            <option value="usd">USD</option>
+        </select>
+    </td>
+    <td  align="center">
+        <select id="2">
+            <option value="usd">USD</option>
+            <option value="vnd">VND</option>
+        </select>
+    </td>
+    <td align="center" colspan="2"><button onclick="lamgido()">Convert</button></td>
+</table>
+<script>
+
+    function lamgido(){
+        let giatrivao =document.getElementById('0').value;
+        let a=document.getElementById('1').value;
+        let b = document.getElementById('2').value;
+        if(a==b){
+           alert(giatrivao);
+    }
+        if(a=="vnd" && b=="usd"){
+            alert(giatrivao/24000);
+        }
+        else {
+            alert(giatrivao*24000);
+        }
+    }
+
+</script>
+</body>
+</html>
